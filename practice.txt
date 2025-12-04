@@ -1,17 +1,27 @@
-✅ LEVEL 1 — Super Easy
+# SECTION 1: Objects and OOPS Thinking (Foundation)
+	1.	Create a user object that stores name and email and has a login method which prints “User logged in”.
+	2.	Imagine you now have 5 users.
+First, think how you would manage them without using a class.
+Then convert the same logic using a class and observe how the code becomes cleaner. Write code for both approaches.
+	3.	Create a product object that stores name and price and has a method which returns the final price after discount.
 
-1. Ek class Person banao jisme name aur age ho.
-Object banao aur dono print karo.
+The goal of this section is to understand why keeping data and behavior together makes code easier to manage.
+====================================================
 
-2. Ek class Car banao jisme brand ho.
-Ek method showBrand() banao.
+ # SECTION 2: Classes and Objects
+	4.	Create a Car class with the following:
+brand
+speed
+a drive method that prints the car brand and speed
+	5.	Create two different car objects from the same class and verify that their data is different.
+	================================================
+	
+# SECTION 3: Constructor and this keyword
+	7.	Create a Student class whose constructor accepts name and roll number.
+Add a method introduce that prints both values.
+	
+.
+⸻
 
-3. Ek class Book banao jisme title, author ho.
-Object banao aur book ka title print karo.
+	
 
-4. Ek class Mobile banao jisme model, price ho.
-Ek method showInfo() banao jo dono print kare.
-
-5. Ek class Laptop banao jisme company ho.
-Object banate waqt value pass karo.
--------------------------------------------------------------------

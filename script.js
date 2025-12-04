@@ -1,64 +1,94 @@
-//✅ // 1. Ek class Person banao jisme name aur age ho.
-// // Object banao aur dono print karo.
-// class Person {
-//     constructor() {
-//         this.name = "Yugant";
-//         this.age = 23;
+// // 1.	Create a user object that stores name and email and has a login method which prints “User logged in”.
+// let user  = {
+//     name: "yugant",
+//     email: "yugantsingh@gmail.com",
+//     login: function(){
+//         console.log("user logged In successfully");
 //     }
-//     printKro() {
-//         console.log(`My name is ${this.name} and i am ${this.age} years old`);
-//     }
-// }
-// let p1 = new Person();
-// console.log(p1.printKro());
-// //--------------------------------------------------
-// // ✅ 2. Ek class Car banao jisme brand ho.
-// // Ek method showBrand() banao.
-// class Car{
-//     constructor(brand , color){
-//         this.brand = brand;
-//         this.color = color;
-//     }
+//  }
 
-//     showBrand(){
-//         console.log(`${this.brand} is in ${this.color} color`);
+// console.log(user.name,user.email, user.login());
+//====================================================
+// // 2.	Imagine you now have 5 users.
+// // First, think how you would manage them without using a class.
+// // Then convert the same logic using a class and observe how the code becomes cleaner. Write code for both approaches.
+
+
+// class Users{
+//     constructor(name,email){
+//         this.name = name;
+//         this.email = email;
 //     }
-// }
-
-// let c1  = new Car("Tata", "Black");
-// let c2  = new Car("Jaiguar", "Golden");
-// let c3  = new Car("Suzuki", "White");
-//----------------------------------------------------
-
-// // ✅3. Ek class Book banao jisme title, author ho.
-// // Object banao aur book ka title print karo.
-// class Book{
-//     constructor(title,author){
-//         this.title = "Hum hai rahi pyar ke Fir milenge chlte chlte";
-//         this.author = "Yugant Singh";
+//     login(){
+//         console.log(`${this.name} logged in successfully`);
 //     }
 // }
 
-// let b1  = new Book();
-// console.log(b1.title);
-//----------------------------------------------------
 
-// //✅ 4. Ek class Mobile banao jisme model, price ho.
-// // Ek method showInfo() banao jo dono print kare.
+// let user1  = new Users("Yugant", "yugant@gmail.com");
+// let user2  = new Users("Ankita", "ankita@gmail.com");
+// let user3  = new Users("Samay", "samay@gmail.com");
 
+//---------------------------------------------------
 
-// class Mobile{
-//     constructor(model, price){
-//         this.model = model;
-//         this.price = price;
+// // 3.	Create a product object that stores name and price and has a method which returns the final price after discount.
+
+// class DiscountPrice{
+//     constructor(name,price){
+//         this.name = name;
+//         this.price = price
 //     }
-
-//     showInfo(){
-//         console.log(`${this.model}, ${this.price}`);
+//     discount(price){
+//            return this.price-200;
 //     }
 // }
 
-// let m1  = new Mobile("Samsung", 12000);
+// let p1  = new DiscountPrice("mobile" , 1500);
+// console.log(p1.discount());
 
 
 //--------------------------------------------------
+// // 4.	Create a Car class with the following:
+// // brand
+// // speed
+// // a drive method that prints the car brand and speed
+// // 5.	Create two different car objects from the same class and verify that their data is different.
+
+
+// class Car{
+//     constructor(brand,speed){
+//         this.brand = brand;
+//         this.speed = speed;
+//     }
+//     drive(){
+//     console.log(`${this.brand} - ${this.speed}`);   
+//     }
+// }
+
+// let c1  = new Car("Toyota" , 156);
+// let c2  = new Car("Defender" , 240);
+
+//--------------------------------------------------
+
+// 	6.	Answer this in your own words:
+// If classes did not exist, how would you write this logic and what problems might occur when the project becomes large?
+
+
+
+//--------------------------------------------------
+//  7.	Create a Student class whose constructor accepts name and roll number.
+
+class Student {
+    constructor(name,roll){
+        this.name = name;
+        this.roll = roll;
+    }
+
+    introduce(){
+        console.log(`${this.name} - ${this.roll}`);
+        
+    }
+}
+
+let s1 = new Student("Yugant", 124);
+let s2 = new Student("Ankita", 135);
